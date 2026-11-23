@@ -2,7 +2,7 @@
 
 A `${{ secrets.X }}`-derived environment variable is sent to a network destination via `curl`, `wget`, or similar. The rule fires `critical` regardless of destination — there is currently no way to express "this host is the legitimate API for this secret."
 
-Upstream feature request: https://github.com/sisaku-security/sisakulint/issues/473
+Upstream feature request: https://github.com/gh-intel/sisakulint/issues/473
 
 ## Decision tree
 
@@ -21,7 +21,7 @@ Until `allowed-hosts` lands, pass `-ignore secret-exfiltration` via the `args` i
 
 ```yaml
 # .github/workflows/sisakulint.yml
-- uses: sisaku-security/sisakulint-action@<sha>
+- uses: gh-intel/sisakulint-action@<sha>
   with:
     args: -ignore "secret-exfiltration"
 ```
