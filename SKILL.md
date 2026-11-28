@@ -16,7 +16,7 @@ Static security linter for GitHub Actions workflows with auto-fix support.
 
 ## Steps
 
-1. Run `sisakulint`. If not found, install with `go install github.com/sisaku-security/sisakulint/cmd/sisakulint@v0.2.9`
+1. Run `sisakulint`. If not found, install with `go install github.com/gh-intel/sisakulint/cmd/sisakulint@v0.2.9`
 2. Review findings, then apply auto-fix: `sisakulint -fix on`
 3. Apply manual remediations for rules that auto-fix cannot handle — open the per-rule reference linked from the table below.
 4. Validate: re-run `sisakulint` and confirm zero findings
